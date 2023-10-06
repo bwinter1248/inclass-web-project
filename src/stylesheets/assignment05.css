@@ -1,0 +1,25 @@
+/*mobile view*/
+:root {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #8f8f8f;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+/*desktop view*/
+@media all and (min-width: 500px){
+    :root {
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        color: #8f8f8f;
+    }
+    
+    *, ::after, ::before {
+        box-sizing: inherit;
+    }
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Use flex box no float">
+    <title>Assignment 05</title>
+    
+    <style>
+        
+
+        *, ::after, ::before {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .center {
+            margin: auto;
+            width: 60%;
+        }
+
+        p {
+            color: black;
+            margin-top: 10px;
+        }
+        div {
+            flex: 1;
+        }
+
+        h2 {
+            color: black;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: rgb(95, 95, 95);
+            font-weight: bolder;
+        }
+
+        h4 {
+            font-size: 1rem;
+            margin-bottom: 0;
+            color: #9e9e9e;
+            font-weight: normal;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .heading > .top > .left {
+            margin-left: 10px;
+
+        }
+        
+        footer {
+            background-color: #5c5c5c;
+        }
+
+        /*mobile view*/
+        @media all and (max-width: 500px){
+
+            :root {
+                box-sizing: border-box;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 12px;
+                color: #8f8f8f;
+            }
+            
+            header nav {
+                display: none;
+            }
+
+            header .right {
+                display: none;
+            }
+
+            
+
+            header {
+                border-bottom: 2px solid grey;
+            }
+
+            main {
+                margin: 0 10px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin: 20px 0 5px 0;
+                border-radius: .5rem;
+            }
+
+            h3 {
+                margin: 0;
+            }
+
+            .post > .right {
+                display: none;
+            }
+            
+            .b {
+                display: none;
+            }
+
+            footer nav {
+                display: none;
+            }
+
+            .right3 {
+                text-align: center;
+                color: white;
+                padding: 15px 0;
+            }
+        }
+
+        /*desktop view*/
+        @media all and (min-width: 501px){
+
+            :root {
+                box-sizing: border-box;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                color: #8f8f8f;
+            }
+
+            .heading {
+                display: flex;
+                padding: 0;
+                flex-flow: column nowrap;
+            }
+
+            .links li {
+                display: inline;
+                padding: 0 20px;
+                }
+
+            .links > ul > li > a {
+                text-decoration: none;
+                color: rgb(247, 136, 103);
+                font-size: 1.1rem;
+            }
+
+            .links > ul {
+                list-style: none;
+                margin: 0;
+                text-align: center;
+                background-color: #dddddd;
+                padding: 20px;
+            }
+
+            .heading > .top {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .heading > .top > .left {
+                padding: 0;
+            }
+
+            .heading > .top > .right {
+                text-align: right;
+                vertical-align: middle;
+            }
+
+            .heading > .bottom {
+                text-align: center;
+            }
+
+            .right > .menu {
+                text-align: center;
+                background-color: #dddddd;
+                border-radius: 18px;
+                margin-left: 55%;
+                padding: 10px;
+                margin-right: 15px;
+                color: rgb(39, 39, 39);
+            }
+
+            main {
+                margin: 0 10%;
+            }
+
+            .post {
+                display: flex;
+                flex-flow: row nowrap;
+
+            }
+
+            .post > .left {
+                display: flex;
+                flex-grow: 2.5;
+                flex-flow: column nowrap;
+            }
+
+            .post > .right {
+                background-color: #e7e7e7;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 20px;
+                
+            }
+
+            .post > .right > img {
+                width: 100%;
+                height: auto;
+            }
+
+            .post > .left > .top {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 10px;
+                padding-bottom: 20px;
+            }
+
+            .post > .left > .bottom {
+                display: flex;
+                flex-flow: row nowrap;
+                margin: 10px;
+                padding-bottom: 15%;
+            }
+
+            .post > .left > .top {
+                border-bottom: 2px solid grey;
+            }
+
+            .left2{
+                text-align: center;
+            }
+
+            .right2 {
+                flex-grow: 3;
+            }
+
+            .left2 img {
+                display: block;
+                width: 250px;
+                height: 250px;
+                border-radius: 10px;
+                margin: 15px 0;
+                padding: 0;
+            }
+
+            .b {
+                color: white;
+                background-color: rgb(247, 136, 103);
+                padding: 10px 20px;
+                margin-top: 20px;
+                border: 0px;
+                border-radius: 5px;
+            }
+
+            .footer {
+                display: flex;
+                padding: 0;
+                flex-flow: row nowrap;
+                margin-top: 20px;
+            }
+
+            .footer > .top {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .social li {
+                display: inline;
+                padding: 0 10px;
+                }
+
+            .social > ul > li > a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-size: 1rem;
+            }
+
+            .social > ul {
+                padding-left: 10px;
+                list-style: none;
+                margin: 0;
+                text-align: left;
+                padding: 15px;
+            }
+
+            .right3 {
+                text-align: right;
+                vertical-align: middle;
+                color: white;
+                margin-right: 20px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <div class="top">
+                <div class="left">
+                    <div class="menu"><h2>Ben Winter</h2></div>
+                </div>
+                <div class="right center">
+                    <div class="menu"><a class="search">Type to search</a></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="menu">
+                    <nav class="links">
+                        <ul>
+                            <li><a href="http://www.lorem.edu" target = "new_tab">Home</a></li>
+                            <li><a href="http://www.lorem.edu" target = "new_tab">Recent posts</a></li>
+                            <li><a href="http://www.lorem.edu" target = "new_tab">Old posts</a></li>
+                            <li><a href="http://www.lorem.edu" target = "new_tab">Contact us</a></li>
+                            <li><a href="http://www.lorem.edu" target = "new_tab">About us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="post">
+            <div class="left">
+                <div class="top">
+                    <div class="left2"><img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt=""></div>
+                    <div class="right2">
+                        <h3>First post with image</h3>
+                        <h4>By Adam Smith, Jan 1 2021</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde molestias rem earum repellendus veritatis quam veniam libero labore dolores maiores sequi voluptas atque expedita nesciunt, reiciendis officiis ab officia dignissimos.</p>
+                        <br>
+                        <a class="b">Read More</a>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="left2"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt=""></div>
+                    <div class="right2">
+                        <h3>Second post with image</h3>
+                        <h4>By Adam Smith, Jan 1 2021</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt vitae ab veritatis, aperiam molestias optio. Voluptates maiores laborum, officia accusantium autem totam repellat quaerat ea eum? Quisquam, sequi distinctio?</p>
+                        <br>
+                        <a class="b">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h3>Secondary conternt here</h3>
+                <img src="https://images.unsplash.com/photo-1490682143684-14369e18dce8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ut maiores expedita laboriosam vel fuga, iure in repellendus reiciendis, sit dicta earum magni soluta ducimus non ratione, doloribus provident libero?</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="left3">
+                <nav class="social">
+                    <ul>
+                        <li><a href="http://www.lorem.edu" target = "new_tab">FaceBook</a></li>
+                        <li><a href="http://www.lorem.edu" target = "new_tab">Twitter</a></li>
+                        <li><a href="http://www.lorem.edu" target = "new_tab">YouTube</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right3 center">
+                <a>&copy; All rights reserved</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
