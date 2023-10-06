@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Recreating practice activity 05 sample page" />
+    <title>Practice activity 05</title>
+
+    <style>
+      :root {
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+      }
+
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      nav {
+        padding: 10px 0;
+        border-bottom: 2px solid gray;
+      }
+
+      nav li {
+        display: inline;
+        padding: 0 5px;
+      }
+
+      nav > ul > li > a {
+        text-decoration: none;
+        color: rgb(226, 150, 50);
+        font-size: 1.1rem;
+      }
+
+      nav > ul {
+        padding-left: 10px;
+        list-style: none;
+        float: left;
+        margin: 0;
+      }
+
+      .first {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      nav > .pull-right {
+        float: right;
+        padding: 0 10px;
+      }
+
+      main {
+        margin: 20px 10%;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      h2 > span {
+        color: salmon;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .a1 > img {
+        width: 40%;
+        float: left;
+        border-radius: 10px;
+        margin: 10px;
+      }
+
+      .circle {
+        float: left;
+        width: 225px;
+        height: 225px;
+        border-radius: 112.5px;
+        margin: 0.5rem;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 2.3rem;
+      }
+
+      .vcenter .circle::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+
+      .colTable {
+        display: table;
+        margin-bottom: 10px;
+      }
+
+      .colTable .col {
+        display: table-cell;
+        padding: 10px;
+      }
+
+      footer {
+        border-top: 2px solid grey;
+        margin: 0;
+        padding: 5px 15px 10px 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      footer > span {
+        float: right;
+        font-weight: normal;
+      }
+    </style>
+
+    <body>
+      <nav class="clearfix">
+        <ul>
+          <li class="first">Floated menus:</li>
+          <li><a href="http://www.lorem.edu" target="new_tab">One</a></li>
+          <li><a href="http://www.lorem.edu" target="new_tab">Two</a></li>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="http://www.lorem.edu" target="new_tab">Three</a></li>
+          <li><a href="http://www.lorem.edu" target="new_tab">Four</a></li>
+        </ul>
+      </nav>
+      <main>
+        <article class="a1 clearfix">
+          <h2><span>&lt;Article 1&gt;: </span>Wrapping text around an image</h2>
+          <img
+            src="https://images.unsplash.com/photo-1695686181301-c3f157e14d4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80"
+            alt="unsplash img"
+          />
+          <h2>A secondary heading</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, est eos dolorem corrupti sint beatae minima
+            in adipisci quam perferendis rem porro vero possimus hic quaerat quod consectetur consequatur quidem. Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Ut odio optio, hic aspernatur assumenda consectetur
+            asperiores corrupti error est dicta nihil inventore eum beatae neque adipisci placeat, vero dolore sapiente?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In eius, ut a natus velit maiores nam nemo eos.
+            Similique doloribus fugit dolores eveniet qui earum? Nam rerum aliquid sed explicabo. Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Perferendis nemo repellendus necessitatibus ut illo fuga quia deserunt a
+            sunt laboriosam nihil nesciunt eveniet eligendi voluptatem adipisci soluta, voluptates consectetur fugit!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dicta quas, eos ut, obcaecati nulla possimus
+            omnis expedita in sequi quod voluptate eligendi veritatis eveniet nihil iusto eaque deleniti quisquam.
+            Perferendis nemo repellendus necessitatibus ut illo fuga quia deserunt a sunt.
+          </p>
+        </article>
+        <article class="a2 clearfix">
+          <h2><span>&lt;Article 2&gt;: </span>Centering text vertically</h2>
+          <div class="vcenter">
+            <div class="circle">Selectors</div>
+            <div class="circle">Inheritance</div>
+            <div class="circle">Cascade</div>
+            <div class="circle">Specificity</div>
+          </div>
+        </article>
+        <article class="a3 clearfix">
+          <h2><span>&lt;Article 3&gt;: </span>Equal-height columns</h2>
+          <div class="colTable">
+            <div class="col" style="width: 20%; background-color: gray; color: #fff">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae itaque dolorem quasi, quo tenetur aut
+              exercitationem quam voluptatibus aliquam vel fugiat perspiciatis aperiam voluptas deleniti asperiores ab,
+              iste cumque omnis.
+            </div>
+            <div class="col" style="width: 60%; background-color: #000; color: #fff">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos qui porro laborum vitae dolore
+              officiis nulla perferendis quos animi consequatur ab rerum ipsam facilis dolor magni, beatae a tenetur
+              tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima illo quasi, molestias dolores
+              tempora maiores quam dolorum ullam laudantium sequi dolor, possimus iure odit omnis fugit a porro id odio.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, delectus. Consequatur, maxime ex numquam
+              quia nesciunt quisquam similique assumenda nobis itaque? Eos nobis vero incidunt amet ab repellendus id
+              sapiente? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem amet aliquam cumque eius ut
+              quasi officiis illum, distinctio eaque id pariatur voluptatibus. Incidunt, ipsum nostrum vitae optio
+              repellat fuga facere.
+            </div>
+            <div class="col" style="width: 20%; background-color: gray; color: #fff">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae molestias libero officiis quas
+              officia aspernatur? Quibusdam atque aperiam architecto fugit reiciendis, illum et perspiciatis vero dicta
+              provident est omnis nostrum.
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>Ben Winter<span>&copy; All rights reserved</span></footer>
+    </body>
+  </head>
+</html>

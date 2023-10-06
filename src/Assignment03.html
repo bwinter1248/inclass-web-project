@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Recreating another sample page" />
+    <title>Assignment03</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        background-color: rgb(82, 112, 128);
+        margin: 0;
+      }
+
+      header {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        padding: 15px 0 15px 30px;
+      }
+
+      header > span {
+        margin-left: 10px;
+      }
+
+      header > span:nth-child(1) {
+        font-weight: bold;
+      }
+
+      header > span:nth-child(2),
+      header > span:nth-child(4) {
+        color: gray;
+      }
+
+      header > span:nth-child(3) {
+        padding-bottom: 2px;
+        border-bottom: 2px solid rgb(97, 135, 206);
+        color: grey;
+      }
+
+      main {
+        background-color: white;
+        margin: 4% 15%;
+        padding: 0 40px 30px 40px;
+        border-radius: 25px;
+      }
+
+      .top {
+        display: inline-block;
+        color: rgb(82, 112, 128);
+        margin: 10% 20% 5% 20%;
+        padding: 20px 0;
+        border-top: 1px solid rgb(82, 112, 128);
+        border-bottom: 1px solid rgb(82, 112, 128);
+      }
+
+      .top p > span {
+        font-weight: bold;
+      }
+
+      h1 {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 0;
+      }
+      h1 > .subtitle {
+        display: block;
+        font-size: 1.5rem;
+        color: rgb(82, 112, 128);
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table > thead {
+        text-align: left;
+        font-weight: bold;
+        border-bottom: 3px solid rgb(82, 112, 128);
+      }
+
+      table > tbody {
+        border-bottom: 3px solid rgb(82, 112, 128);
+        margin-bottom: 5%;
+      }
+
+      table > tbody > tr {
+        border-bottom: 1px solid rgb(82, 112, 128);
+      }
+
+      thead th,
+      tbody td {
+        padding: 10px 0;
+      }
+
+      footer {
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+
+      .menu {
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 35px 0 20px 0;
+      }
+
+      .menu > li {
+        display: inline;
+        padding: 0 10px;
+      }
+
+      .menu > li > a {
+        text-decoration: none;
+        color: rgb(82, 112, 128);
+      }
+
+      .email > a {
+        display: block;
+        text-decoration: none;
+        color: rgb(82, 112, 128);
+      }
+
+      footer > div {
+        font-style: italic;
+        padding-bottom: 10px;
+      }
+
+      .bottom {
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <span>Ben Winter</span>
+      <span>Home</span>
+      <span>Articles</span>
+      <span>Interests</span>
+    </header>
+    <main>
+      <div class="top">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quibusdam fuga omnis iste. Iusto, nisi ratione
+          saepe, neque quam doloremque repudiandae dignissimos corporis ex excepturi consequuntur iste ipsum quia
+          aspernatur?<span> - John Doe</span>
+        </p>
+      </div>
+      <h1>
+        Lorem ipsum dolor sit adipisicing
+        <span class="subtitle">Sequi eligendi nihil recusandae facilis fugit rem impedit.</span>
+      </h1>
+      <img
+        src="https://images.unsplash.com/photo-1694813646560-b7afa704f3f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+        alt="unitsplash.com"
+      />
+      <div class="unordered">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptates modi at officiis in nulla eaque
+          cupiditate, facere ratione! Suscipit, sunt sequi labore adipisci laboriosam rem et id commodi a! Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Rem placeat recusandae doloremque cum temporibus accusantium
+          porro optio dolores sunt quisquam iusto dolorem totam, eaque, atque ut sapiente vero quod eum:
+        </p>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima fugiat perspiciatis, repudiandae
+            dignissimos.
+          </li>
+          <li>
+            Magnam sunt blanditiis molestiae eveniet officiis nisi, ad libero hic sequi doloremque perferendis, ea unde.
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti alias iste quam ea commodi iusto.
+            Numquam, quis itaque. Deserunt mollitia, voluptates accusamus sed magnam nam sequi? Dignissimos quasi totam
+            minima.
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit accusamus odit possimus corrupti, nemo.
+          </li>
+          <li>
+            Autem minus ab ut perspiciatis reprehenderit, ex voluptatum hic sit voluptate facere, quod nulla ullam!
+          </li>
+        </ul>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum nam iure fugit sint, ipsam commodi in
+          dolorum quasi laborum rem, eveniet natus eum quod pariatur qui eaque quis cupiditate?
+        </p>
+      </div>
+      <section class="ordered">
+        <h2>Dolor velit possimus assumenda voluptatum</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero labore amet inventore eveniet eligendi
+          molestiae, voluptatem commodi repellat quisquam ratione quod dignissimos nostrum. In aspernatur dignissimos
+          consequuntur minima, obcaecati maxime.
+        </p>
+        <ol>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque aperiam maxime tempora quia. A dolorem
+            deleniti harum esse? Facere voluptatum, minima voluptatibus quae hic iure consectetur veritatis eos est
+            delectus?
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi praesentium distinctio officia vel molestias
+            debitis voluptatum, mollitia deserunt fugiat? Velit sit dicta assumenda, corporis exercitationem
+            reprehenderit laudantium praesentium omnis debitis!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, expedita debitis voluptatem provident quia
+            recusandae ullam laborum ipsa mollitia totam voluptatum reprehenderit sunt asperiores dicta, eveniet iusto
+            omnis quos corporis!
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, repudiandae! Ad maxime sequi, odit ea
+            voluptates laudantium vero sed totam a, delectus repellendus commodi sunt veniam voluptatem quos fuga
+            tempora.
+          </li>
+        </ol>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis error temporibus iusto possimus sed
+          fugiat maiores nam quaerat quam, ad mollitia, eveniet sequi expedita cum? Quia placeat sapiente repellendus.
+        </p>
+      </section>
+      <h2>At aspernatur iusto voluptates adipisci</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alfreds futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Ermst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Laughing Baccus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <ul class="menu">
+        <li><a href="http://www.lorem.edu" target="new_tab">Home</a></li>
+        <li><a href="http://www.lorem.edu" target="new_tab">Articles</a></li>
+        <li><a href="http://www.lorem.edu" target="new_tab">Interests</a></li>
+      </ul>
+      <div>
+        2568 Ambercove St. New Town, XState 82085<span class="email"
+          ><a href="http://www.lorem.edu" target="new_tab">joe@example.com</a></span
+        >
+      </div>
+      <div class="bottom">2021 - 2025 All rights reserved</div>
+    </footer>
+  </body>
+</html>
