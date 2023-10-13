@@ -130,7 +130,6 @@ body {
         display: block;
         flex: 3;
         background-color: lightblue;
-        vertical-align: top;
     }
 
     .use-float #aside-col {
