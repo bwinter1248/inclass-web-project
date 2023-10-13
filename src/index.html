@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        *, ::after, ::before {
+            box-sizing: inherit;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hLeft">
+            <ul class="hmenu">
+                <li>Ben Winter</li>
+                <li><a href="Link_1">Home</a></li>
+                <li><a href="Link_2">Products</a></li>
+                <li><a href="Link_3">Services</a></li>
+                <li><a href="Link_4" selected>Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="hRight">
+            <ul class="hmenu">
+                <li><a href="Link_5">Sign in</a></li>
+                <li><a href="Link_6">Sign up</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="aside">
+            <h2>Main menu</h2>
+            <ul class="menu">
+                <li>Ben Winter</li>
+                <li><a href="Link_1">Home</a></li>
+                <li><a href="Link_2">Products</a></li>
+                <li><a href="Link_3">Services</a></li>
+                <li><a href="Link_4">Contact Us</a></li>
+            </ul>
+            <h2>Featured projects</h2>
+            <ul class="projects">
+                <li><a href="Link_1">Project A</a></li>
+                <li><a href="Link_2">Project B</a></li>
+                <li><a href="Link_3">Project C</a></li>
+                <li><a href="Link_4">Project D</a></li>
+                <li><a href="Link_5">Project E</a></li>
+                <li><a href="Link_6">Project F</a></li>
+                <li><a href="Link_6">Project G</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <h3>Contact Us Form</h3>
+            <h4>Name</h4>
+            <div class="name">Type name here</div>
+
+            <h4>Username</h4>
+            <div class="username">Text input</div>
+            <div class="avai">This username is available</div>
+
+            <h4>Are you a member?</h4>
+            <input type=”radio” name=”yes” id=”yes”>
+            <label for="yes">Yes</label>
+            <input type=”radio” name=”no” value=”no”>
+            <label for="no">No</label>
+
+            <h4>Email</h4>
+            <div class="email">Email input</div>
+            <div class="inva">This email is invalid</div>
+
+            <h4>Message</h4>
+            <div class="message">Textarea</div>
+
+            <input type=”radio” name=”terms” id=”terms”>
+            <label for="terms">I agree to the <a href="link_10">terms and conditions</a></label>
+
+            <div class="buttons">
+                <button class="sub">Submit</button>
+                <button class="can">Cancel</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="res">&copy; 2021 - CS 2350 - All rights reserved</div>
+    </footer>
+</body>
+</html>
