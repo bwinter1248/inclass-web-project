@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6  A simple form</title>
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        *, ::after, ::before {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f1f1fc;
+        }
+
+        header {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .hRight {
+            text-align: right;
+            flex: 1;
+        }
+
+        .hmenu {
+            margin: 0;
+            padding: 0 1.5rem;
+        }
+
+        .hmenu > li {
+            display: inline;
+            margin-left: 1rem;
+        }
+
+        .hLeft >.hmenu > li:nth-child(1) {
+            font-weight: bolder;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .hmenu > li:nth-child(5){
+            border-bottom: 3px solid blue;
+            padding-bottom: 3px;
+        }
+
+        main {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 30px 10%;
+        }
+
+        .aside {
+            background-color: white;
+            margin-right: 15px;
+            padding: 15px 20px;
+            border-radius: 30px;
+            width: 30%;
+        }
+        
+        .menu > li, .projects > li {
+            display: block;
+            padding: 2px;
+        }
+
+        .form {
+            background-color: white;
+            margin-left: 15px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            flex: 1;
+        }
+
+        h3 {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid blue;
+            margin: 2rem 0 1.7rem 0;
+        }
+
+        .h4 {
+            display: block;
+            margin: 1rem 0;
+            font-weight: bolder;
+        }
+
+        .field {
+            margin: 1rem 0;
+        }
+
+        .field input:not([type="radio"]):not([type="checkbox"]), textarea {
+            vertical-align: middle;
+            color: #b1b1b1;
+            border: 2px solid #c0c0c0;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .username {
+            margin-bottom: .5rem;
+        }
+
+        .username input {
+            border-color: #adfeae !important;
+        }
+
+        .avai {
+            color: #52ee52;
+            font-size: .8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .email {
+            margin-bottom: .5rem;
+            margin-top: 1.5rem;
+        }
+
+        .email input {
+            border-color: #fa9b9d !important;
+        }
+
+        .inva {
+            color: #ff6b6c;
+            font-size: .8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        textarea {
+            width: 100%;
+            height: 250px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sub, .can {
+            padding: 8px 10px;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            border: 0px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .sub {
+            color: #e7e7e7;
+            background-color: blue;
+        }
+
+        .can {
+            color: blue;
+            background-color: #e7e7e7;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: #9b96bb;
+            height: 75px;
+            line-height: 75px;
+            padding: 0;
+            margin: 0;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hLeft">
+            <ul class="hmenu">
+                <li>Ben Winter</li>
+                <li><a href="Link_1">Home</a></li>
+                <li><a href="Link_2">Products</a></li>
+                <li><a href="Link_3">Services</a></li>
+                <li><a href="Link_4">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="hRight">
+            <ul class="hmenu">
+                <li><a href="Link_5">Sign in</a></li>
+                <li><a href="Link_6">Sign up</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="aside">
+            <h2>Main menu</h2>
+            <ul class="menu">
+                <li><a href="Link_1">Home</a></li>
+                <li><a href="Link_2">Products</a></li>
+                <li><a href="Link_3">Services</a></li>
+                <li><a href="Link_4">Contact Us</a></li>
+            </ul>
+            <h2>Featured projects</h2>
+            <ul class="projects">
+                <li><a href="Link_1">Project A</a></li>
+                <li><a href="Link_2">Project B</a></li>
+                <li><a href="Link_3">Project C</a></li>
+                <li><a href="Link_4">Project D</a></li>
+                <li><a href="Link_5">Project E</a></li>
+                <li><a href="Link_6">Project F</a></li>
+                <li><a href="Link_6">Project G</a></li>
+            </ul>
+        </div>
+
+        <div class="form">
+            <form method="post">
+                <h3>Contact Us Form</h3>
+
+                <div class="field name">
+                    <label class="h4" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Type name here">
+                </div>
+
+                <div class="field username">
+                    <label class="h4" for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Text input">
+                </div>
+                <div class="avai">This username is available</div>
+
+                <div class="field">
+                    <label class="h4">Are you a member?</label>
+                    <input type="radio" name="Are you a member?" id="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="Are you a member?" id="no">
+                    <label for="no">No</label>
+                </div>
+                
+
+                <div class="field email">
+                    <label class="h4" for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email input">
+                </div>
+                <div class="inva">This email is invalid</div>
+
+                <div class="field message">
+                    <label class="h4" for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Textarea"></textarea>
+                </div>
+                
+                <div class="field">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I agree to the <a href="link_10">terms and conditions</a></label>
+                </div>
+
+                <div class="buttons">
+                    <button class="sub">Submit</button>
+                    <button class="can">Cancel</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="res">&copy; 2021 - CS 2350 - All rights reserved</div>
+    </footer>
+</body>
+</html>
