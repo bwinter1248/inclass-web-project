@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Multiplication Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 5px 20px 5px 5px;
+    }
+  </style>
 </head>
 <body>
   <script>
@@ -14,7 +24,7 @@
       document.write("<tr>");
       for (var j = 1; j <= 12; j++) {
         var product = i * j;
-        document.write("<td>" + i + " x " + j + " = " + product + "</td>");
+        document.write("<td>" + product + "</td>");
       }
       document.write("</tr>");
     }
